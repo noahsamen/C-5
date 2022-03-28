@@ -1,0 +1,43 @@
+#include <iostream>
+
+int main() {
+  std::cout << "Loops";
+  const size_t t {};
+  for(size_t t{3}; t<20; ++t){
+    std::cout<<"\nValue repeat: "<<t<<" and "<<t%5;
+  }
+  std::cout<<"\nLoop is finished";
+  std::cout<<"\n----------------------";
+  std::cout<<"\nWhile Loop";
+  const size_t POOP {13};
+  unsigned int y {0};
+  while(y<POOP){
+    std::cout<<y<<"\nValue is repeated: ";
+    y++;
+  }
+  std::cout<<"\nFinished loop";
+  std::cout<<"\n-------------------------";
+  std::cout<<"\nDo While Loop";
+  const unsigned int gg {10};
+  double i {};
+  do{
+    std::cout<<"\nThe value of this do while: "<<i;
+    ++i;
+  }while(i<gg);
+  std::cout<<"\nFinished";
+  std::cout<<"\n---------------";
+  std::cout<<"\nArray";
+  int raiden [10];
+  double sam[] = {3,4,5,6};
+  sam[2] = 3;
+  raiden[1] =7;
+  raiden [2] = 8;
+  std::cout<<"\nRaident meter: "<<raiden[1];
+  std::cout<<"\nRaiden meter: "<<raiden[2];
+  for(int i{}; i < 9; ++i){
+    raiden[i]= i + 5;
+  }
+  for(size_t i{}; i<9; ++i){
+    std::cout<<"\nSam MEMES:"<<sam[2];
+  }
+}
